@@ -14,56 +14,152 @@
         .height2{
             height: 35vh;
         }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            color: success;
+            text-decoration: none;
+        }
+
+        @media(max-width:991px){
+            .btn1{
+                width: 100% !important;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 <body>
 
-   <div class="container-fluid position-fsticky">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    Bootstrap
-                  </a>
-                </div>
-              </nav>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+   <div class="container-fluid ">
+   
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                Manthan
+            </div>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-supported">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<div class=" collapse navbar-collapse" id="nav-supported">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="" class="dropdown-item">dsgfdgfgd</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">dsgfdgfgd</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">dsgfdgfgd</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">dsgfdgfgd</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">info</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="" class="dropdown-item">123</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">123</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">123</a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modal1">click</a>
+                            
+                        </li>
+                    </ul>
+
+                </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+            <button class="btn btn-outline-success btn1 " data-bs-toggle="offcanvas" data-bs-target="#offcanvas1">
+            <span >OFFCANVAS</span>
+        </button>
         </div>
-      </nav>
+        
+    </div>
+    </nav>
    </div>
 
+
+   <div class="modal" id="modal1">
+    <div class="modal-dialog text-center">
+        <div class="modal-content p-5">
+            <h3>Hellow</h3>
+            <button class="btn btn-primary mt-2 " data-bs-dismiss="modal"> close</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start "   id="offcanvas1">
+    <div class="offcanvas-header">
+        <div class="offcanvas-title">
+            <h1>title</h1>
+        </div>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body w-100 position-relative">
+       <ul class=" w-100 p-0 text-center">
+            <li class=" w-100 p-0 my-3">
+               <button class="btn btn-outline-danger w-100">home</button>
+            </li>
+            <li class=" w-100 p-0 my-3">
+               <button class="btn btn-outline-danger w-100">home</button>
+            </li>
+            <li class=" w-100 p-0 my-3">
+               <button class="btn btn-outline-danger w-100">home</button>
+            </li>
+            
+            <li class=" w-100 p-0 my-3">
+               <button class="btn btn-outline-danger w-100">home</button>
+            </li>
+       </ul>
+       <ul class=" w-100 px-3 text-center d-flex flex-column position-absolute start-0 bottom-0 ">
+            <li class=" w-100  my-3">
+               <button class="btn btn-warning w-100">home</button>
+            </li>
+            <li class=" w-100 p-0 my-3">
+               <button class="btn btn-success w-100">home</button>
+            </li>
+            
+       </ul>
+
+       
+    </div>
+</div>
+
+<div class="button text-end mt-5 me-5">
+<button class="btn btn-primary  " data-bs-toggle="modal" data-bs-target="#modal">Click for Model</button>
+</div>
+<div class="modal fade "  id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content p-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt laudantium explicabo, voluptatibus eaque nihil, consequatur nam dolorem in nulla aliquid praesentium sunt assumenda earum cum tenetur placeat temporibus expedita. Delectus.
+        </div>
+    </div>
+</div>
+   
    <div class="container-fluid ">
     <div class="container mt-5">
         <div class="row">
